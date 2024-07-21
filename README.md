@@ -63,6 +63,3 @@ This project demonstrates an effective method for classifying and predicting var
 
 We would like to thank the Alzheimer's Disease Neuroimaging Initiative (ADNI) for providing the dataset used in this study.
 
----
-
-Feel free to modify the content as needed to better fit your project and personal preferences.
