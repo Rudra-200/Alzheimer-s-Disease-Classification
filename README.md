@@ -58,6 +58,7 @@ This project demonstrates an effective method for classifying and predicting var
 - ADNI dataset: [ADNI](http://adni.loni.usc.edu/)
 - Keras Documentation: [Keras](https://keras.io/)
 - TensorFlow Documentation: [TensorFlow](https://www.tensorflow.org/)
+- IEEEExplore Documentation: [PaperLink](https://ieeexplore.ieee.org/abstract/document/10797591/)
 
 ## Acknowledgements
 
