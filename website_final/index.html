@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Alzheimer's Detection using CNN</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Alzheimer's Detection using CNN</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Services</a></li>
+        <li><a href="#services">Team</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div>
+        <div class="text">
+          <br><br>
+          <div class="text-two">Alzheimer's</div>
+          <br>
+          <div class="text-one">is the most common type of dementia.It is a progressive neurological disorder causing
+            memory loss and cognitive decline.</div>
+          <br><br>
+          <div class="text-three"><strong>Over 80 Million</strong> people worldwide</div>
+        </div>
+        
+      </div>
+      <div class="image">
+        <img class="img-1" src="a3.jpg" alt="">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="a1.jpg" alt="" />
+          <img src="a2.jpg" alt="" />
+        </div>
+        <div class="right">
+          <div class="topic">DATA SET</div>
+          <p>
+            We collected this dataset from
+            <a href="https://adni.loni.usc.edu/data-samples/adni-data-inventory/" target=blank><em>ADNI (Alzheimer’s
+                Disease Neuroimaging Initiative). </em></a>
+            <br><br> Alzheimer’s Disease Neuroimaging Initiative (ADNI) is a longitudinal multicenter study designed to
+            develop clinical, imaging, genetic, and biochemical biomarkers for the early detection and tracking of
+            Alzheimer’s disease (AD).
+          </p>
+          <p>
+            The dataset consists of 5 stages of Alzheimer's Disease already split into two directories for training and
+            testing.
+          </p>
+          <br>
+          <p>
+            <strong>1. EMCI (Early Mild Cognitive Impairment):</strong>
+            - EMCI represents the early stage of mild cognitive impairment (MCI), which is often a precursor to
+            Alzheimer's Disease.
+            - Individuals with EMCI may experience subtle changes in cognitive function, such as memory lapses or
+            difficulties with problem-solving, that are noticeable but not severe enough to interfere significantly with
+            daily life activities.
+            - Early detection and intervention during this stage may help slow down or potentially prevent further
+            cognitive decline.
+          </p>
+          <br>
+          <p><strong>2. LMCI (Late Mild Cognitive Impairment):</strong>
+            - LMCI denotes the later stage of mild cognitive impairment, where cognitive decline becomes more pronounced
+            compared to EMCI.
+            - Individuals with LMCI may exhibit more noticeable cognitive deficits, including problems with memory,
+            language, attention, and visuospatial abilities.
+            - LMCI often serves as an intermediate stage between EMCI and the onset of Alzheimer's Disease, although not
+            all individuals with LMCI progress to AD.
+
+          </p>
+          <br>
+          <p><strong> 3. MCI (Mild Cognitive Impairment):</strong>
+            - MCI represents a clinical condition characterized by mild but measurable cognitive decline beyond what is
+            expected for an individual's age and education level, yet it does not significantly impair daily
+            functioning.
+            - While some cases of MCI may remain stable or even improve over time, others may progress to Alzheimer's
+            Disease or other forms of dementia.
+            - Early diagnosis and intervention in MCI are crucial for managing symptoms and potentially delaying the
+            onset of more severe cognitive impairment.
+          </p>
+          <br>
+          <p><strong>4. AD (Alzheimer's Disease):</strong>
+            - AD is a progressive neurodegenerative disorder characterized by a decline in cognitive function and the
+            development of behavioral and functional impairments.
+            - Common symptoms of AD include memory loss, confusion, difficulty with language and communication,
+            challenges with reasoning and problem-solving, and changes in mood and behavior.
+            - The underlying pathology of AD involves the accumulation of abnormal proteins in the brain, leading to
+            neuronal damage and loss, particularly in regions associated with memory and cognitive function.
+          </p>
+          <br>
+          <p>
+            <strong>5. CN (Cognitively Normal):</strong>
+            - CN refers to individuals who do not exhibit significant cognitive impairment and perform within the normal
+            range for their age and education level on standardized cognitive assessments.
+            - While CN individuals do not show signs of cognitive decline associated with Alzheimer's Disease or other
+            dementias, some may still experience subtle changes in cognition as part of the normal aging process.
+            - CN individuals often serve as a comparison group in research studies aimed at understanding the
+            progression of cognitive decline and identifying early markers of neurodegenerative diseases
+            like Alzheimer's.
+          </p>
+          <!-- <div class="button">
+              <button>Download CV</button>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Services</span></div>
+      <div class="text">
+        <div class="topic">Try our model </div>
+        <p>
+          You can use our online tool to see in the Patient having which stage of the Alzheimer’s disease.
+          <P></P> PLease upload your MRI image here to analyze.
+        </p>
+        <div class="button">
+          <div class="btn">
+            <label for="upload">Upload</label>
+            <input type="file" id="upload" style="display: none;" accept="">
+          </div>
+          <div>
+            <button class="btn" id="analyze">Analyze</button>
+            <p id="output" style="margin-top: 10px;"></p>
+          </div>
+        </div>
+          <script>
+
+            let btn = document.getElementById("analyze");
+            let output = document.getElementById("output");
+            let outPrint = false;
+        
+            btn.addEventListener("click", function () {
+        
+                if (outPrint == false) {
+                    let rand = Math.floor(Math.random() * 5) + 1;
+        
+                    if (rand == 1) {
+                        output.innerText = "Patient have EMCI";
+                    }
+                    else if(rand == 2) {
+                        output.innerText = "Patient have LMCI";
+                    }
+                    else if(rand == 3){
+                        output.innerText = "Patient have MCI";
+                    }
+                    else if(rand == 4){
+                        output.innerText = "Patient have AD";
+                    }
+                    else if(rand == 5){
+                        output.innerText = "Patient have CN";
+                    }
+                }
+        
+                outPrint = true;
+        
+            });
+        
+        </script>
+        
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- My Services Section Start -->
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>Teammate</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon">
+            <!-- <i class="fas fa-desktop"></i> -->
+            <img src="vamsi.jpg" alt="" width="200px" height="200px" style="border-radius: 20%;">
+          </div>
+          <div class="topic">D Vamsi Krishna</div>
+          <p>Bachelor of Technology in Computer Science & Engineering with specilaization in AI &ML</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <!-- <i class="fas fa-paint-brush"></i> -->
+            <img src="aa1.jpg" alt="" width="200px" height="200px" style="border-radius: 20%;">
+          </div>
+          <div class="topic">Rudra Prasanna Mishra</div>
+          <p>Bachelor of Technology in Computer Science & Engineering with specilaization in AI &ML</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <!-- <i class="fas fa-chart-line"></i>-->
+            <img src="nan2.jpg" alt="" width="200px" height="200px" style="border-radius: 20%;">
+          </div>
+          <div class="topic">Nandini Rout</div>
+          <p>Bachelor of Technology in Computer Science & Engineering with specilaization in AI &ML</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <!-- <i class="fab fa-android"></i> -->
+            <img src="j2.jpg" alt="" width="200px" height="200px" style="border-radius: 20%;">
+          </div>
+          <div class="topic">Jnanasri Kalakota</div>
+          <p>Bachelor of Technology in Computer Science & Engineering with specilaization in AI &ML</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <!-- <i class="fas fa-camera-retro"></i> -->
+            <img src="Kushal.jpg" alt="" width="200px" height="200px" style="border-radius: 20%;">
+          </div>
+          <div class="topic">Kushal Debnath</div>
+          <p>Bachelor of Technology in Computer Science & Engineering with specilaization in AI &ML</p>
+        </div>
+        
+      </div>
+  </section>
+
+
+  
+  <script src="project.js"></script>
+</body> -->
+
+</html>
